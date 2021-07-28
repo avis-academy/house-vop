@@ -1,0 +1,137 @@
+.navbar {
+	width: 100%;
+	top: -126px;
+	padding: 30px 0;
+	transition: all .39s ease-out;
+}
+
+.navbar_scrolled {
+	position: fixed;
+	top: 0;
+	z-index: 999;
+	background-color: #242B33;
+	box-shadow: 0 12px 11px rgba(0,0,0,.1);
+}
+
+.navbar_scrolled .brand__main {
+	width: 114px;
+}
+
+.navbar__toggler {
+	position: relative;
+	z-index: 12;
+	display: none;
+	border: none;
+	position: relative;
+	width: 31px;
+	height: 24px;
+	background: transparent;
+}
+
+.navbar__toggler i {
+	position: absolute;
+	right: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #fff;
+	transition: all .09s ease-out;
+}
+
+.navbar__toggler i:nth-child(1) {
+	top: 0;
+}
+
+.navbar__toggler i:nth-child(2) {
+	top: 50%;
+	transform: translateY(-50%);
+	width: 80%;
+}
+
+.navbar__toggler i:nth-child(3) {
+	bottom: 0;
+}
+
+.navbar__toggler_active i:nth-child(1) {
+	top: 50%;
+	transform: rotate(45deg) translateY(-50%);
+}
+
+.navbar__toggler_active i:nth-child(2) {
+	display: none;
+}
+
+.navbar__toggler_active i:nth-child(3) {
+	bottom: unset;
+	top: 50%;
+	right: -1px;
+	transform: rotate(-45deg) translateY(-50%);
+}
+
+.navbar .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.navbar__menu {
+	position: relative;
+	z-index: 7;
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style-type: none;
+}
+
+.navbar__menu li {
+	display: inline-block;
+}
+
+.navbar__menu-link {
+	font-size: 14px;
+	color: #fff;
+	text-decoration: none;
+	line-height: 16px;
+	letter-spacing: 0.05em;
+	transition: all .09s ease-out;
+	padding: 20px;
+}
+
+
+@media (max-width: 992px) {
+	.mobile-wrap {
+		position: fixed;
+		background-color: #242B33;
+		box-shadow: 0px 14px 14px rgba(0, 0, 0, 0.36);
+		top: -100vh;
+		left: 0;
+		width: 100%;
+		z-index: 9;
+		height: auto;
+		padding: 128px 0 40px 0;
+		transition: all .49s ease-out;
+	}
+
+	.mobile-wrap_show {
+		top: 0;
+	}
+
+	.navbar__toggler {
+		display: block;
+	}
+
+	.navbar__menu {
+		text-align: center;
+	}
+
+	.navbar__menu li {
+		display: block;
+		margin-bottom: 20px;
+	}
+
+	.navbar__menu li:last-child {
+		margin-bottom: 0;
+	}
+
+	.navbar__menu-link {
+		font-size: 20px;
+	}
+}

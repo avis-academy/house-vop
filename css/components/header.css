@@ -1,0 +1,124 @@
+.header {
+	position: relative;
+	margin-top: -126px;
+	min-height: 840px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	/*background-attachment: fixed;*/
+	display: flex;
+	align-items: flex-end;
+}
+
+.header:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%);
+}
+
+.header__content {
+	position: relative;
+	z-index: 2;
+	height: 100%;
+	text-align: center;
+	max-width: 582px;
+	margin: auto;
+}
+
+.header__contacts {
+	margin-top: 340px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 60px;
+}
+
+.header__contacts-item {
+	color: #fff;
+	font-size: 18px;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	transition: all .09s ease-out;
+}
+
+.header__contacts-item:hover {
+	color: #D4C17F;
+}
+
+.header__contacts-item:hover [class*="icon-"]:before {
+	color: #D4C17F;
+}
+
+.header__contacts-item [class*="icon-"]:before {
+	margin-right: 15px;
+	transition: all .09s ease-out;
+}
+
+.header__contacts-item .icon-map:before {
+	font-size: 21px;
+}
+
+.header__mouse-effect {
+	position: absolute;
+	top: 210px;
+	left: 50%;
+	transform: translateY(-50%);
+}
+
+.header__mouse-effect-mouse {
+	animation: downUp 0.9s cubic-bezier(0.1,0.25,0.1,1) 0s infinite alternate both; 
+}
+
+@keyframes downUp {
+	from {
+		transform: translateY(-10px);
+	}
+
+	to {
+		transform: translateY(5px);
+	}
+}
+
+
+@media (max-width: 1200px) {
+	.header {
+		min-height: 700px;
+	}
+
+	.header__contacts {
+		margin-top: 230px;
+	}
+}
+
+@media (max-width: 576px) {
+	.header {
+		min-height: 435px;
+	}
+
+	.header:before {
+		background: linear-gradient(180deg, #242B33 11.98%, rgba(45, 52, 60, 0.38) 51.04%, #242B33 92.19%), linear-gradient(0deg, rgba(36, 43, 51, 0.78), rgba(36, 43, 51, 0.78));
+	}
+
+	.header__mouse-effect {
+		display: none;
+	}
+
+	.header__contacts {
+		margin-top: 89px;
+		padding-bottom: 15px;
+		flex-flow: column-reverse wrap;
+		justify-content: center;
+		text-align: center;
+	}
+
+	.header__contacts-item {
+		text-align: center;
+		justify-content: center;
+		margin-bottom: 15px;
+	}
+}

@@ -1,0 +1,123 @@
+@import "../libs/bootstrap5/bootstrap-reboot.min.css";
+@import "../libs/bootstrap5/bootstrap-grid.min.css";
+@import "../fonts/icomoon/style.css";
+@import "components/header.css";
+@import "components/navbar.css";
+@import "components/section.css";
+@import "components/other.css";
+@import "components/bootstrap-skins.css";
+@import "components/button.css";
+@import "components/footer.css";
+
+.font1 {
+	font-family: 'Playfair Display', serif !important;
+}
+
+.font2 {
+	font-family: 'Raleway', sans-serif !important;
+}
+
+.font3 {
+	font-family: 'Roboto', sans-serif !important;
+}
+
+.text-accent {
+	color: #d4c17f !important;
+}
+
+.posr {
+	position: relative !important;
+}
+
+.mb-50 {
+	margin-bottom: 50px !important;
+}
+
+.fz11 {
+	font-size: 11px !important;
+}
+
+p {
+	line-height: 24px;
+	margin-bottom: 0;
+}
+
+h1 {
+	font-family: 'Playfair Display', serif !important;
+	font-size: 48px;
+	line-height: 64px;
+	font-weight: 700;
+	color: #D4C17F;
+}
+
+h2 {
+	font-family: 'Playfair Display', serif;
+	font-size: 36px;
+	font-weight: 700;
+	color: #d4c17f;
+	margin-bottom: 50px;
+}
+
+a:hover {
+	color: #D4C17F;
+}
+
+img {
+	width: 100%;
+}
+
+.link_unstyled {
+	color: #fff;
+	text-decoration: none;
+}
+
+.text-center {
+	text-align: center !important;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	color: #fff;
+	font-size: 16px;
+	min-width: 280px;
+	background-color: #242B33;
+	overflow-x: hidden;
+}
+
+
+@media (max-width: 1200px) {
+	p {
+		font-size: 14px;
+	}
+}
+
+
+@media (max-width: 768px) {
+	h1 {
+		font-size: 38px;
+		line-height: 54px;
+	}
+
+	h2 {
+		margin-bottom: 10px;
+	}
+}
+
+@media (max-width: 576px) {
+	h1 {
+		font-size: 28px;
+		line-height: 37px;
+	}
+
+	h2 {
+		font-size: 26px;
+		line-height: 34px;
+	}
+}
+
+
+@media (min-width: 1200px) {
+	.fz-lg-13 {
+		font-size: 13px !important;
+	}
+}
