@@ -8,7 +8,7 @@
 Плейлист: https://youtube.com/playlist?list=PLOjCcvKYFQgK4ren7IVclb0ELejgoego6
 1. Вводное видео - https://youtu.be/bQjxCHKkz84
 2. Подготовка к вёрстке и нарезка макета из Figma - https://youtu.be/YkLiAGmXoVo
-3. Вёрстка десктопной версии HTML макета - (скоро)
+3. Вёрстка десктопной версии HTML макета - https://youtu.be/t86UKfWz0wU
 4. Вёрстка мобильной версии HTML макета - (скоро)
 5. Добавление на сайт динамики и работа с JavaScript - (скоро)
 
