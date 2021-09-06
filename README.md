@@ -9,7 +9,7 @@
 1. Вводное видео - https://youtu.be/bQjxCHKkz84
 2. Подготовка к вёрстке и нарезка макета из Figma - https://youtu.be/YkLiAGmXoVo
 3. Вёрстка десктопной версии HTML макета - https://youtu.be/t86UKfWz0wU
-4. Вёрстка мобильной версии HTML макета - (скоро)
+4. Вёрстка мобильной версии HTML макета - https://youtu.be/SFlbOfQKBQk
 5. Добавление на сайт динамики и работа с JavaScript - (скоро)
 
 ## Как скачать?
